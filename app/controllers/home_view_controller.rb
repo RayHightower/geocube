@@ -18,7 +18,7 @@ class HomeViewController < UIViewController
       header_label.backgroundColor = :clear.uicolor
       subview << header_label
 
-      sublabel = UILabel.alloc.initWithFrame(header_frame.below(100).centered_in(subframe))
+      sublabel = UILabel.alloc.initWithFrame(header_frame.below(100).width(200).centered_in(subframe))
       sublabel.text = "lorem ipsum dolor amet..."
       sublabel.backgroundColor = :clear.uicolor
       subview << sublabel
