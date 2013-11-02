@@ -10,17 +10,17 @@ class HomeViewController < UIViewController
     3.times do |i|
       subframe = scroll_frame.right(scroll_frame.width * i)
       subview = UIView.alloc.initWithFrame(subframe)
-      # subview.backgroundColor = [rand * 255, rand * 255, rand * 255].uicolor
-      subview.backgroundColor = [85,99,0].uicolor
+      subview.backgroundColor = [100+(rand * 155),100+(rand * 155),100+(rand * 155)].uicolor
+      
       scroll << subview
       header_frame = subview.bounds.down(30).right(30).width(150).height(20)
       header_label = UILabel.alloc.initWithFrame header_frame
-      header_label.text = "This is page #{i + 1}"
+      header_label.text = "Welcome to page #{i + 1}!!!"
       header_label.backgroundColor = :clear.uicolor
       subview << header_label
 
       sublabel = UILabel.alloc.initWithFrame(header_frame.below(100).width(200).centered_in(subframe))
-      sublabel.text = "lorem ipsum dolor amet..."
+      sublabel.text = "This is some sample text."
       sublabel.backgroundColor = :clear.uicolor
       subview << sublabel
     end
