@@ -10,7 +10,8 @@ class HomeViewController < UIViewController
     3.times do |i|
       subframe = scroll_frame.right(scroll_frame.width * i)
       subview = UIView.alloc.initWithFrame(subframe)
-      subview.backgroundColor = [rand * 255, rand * 255, rand * 255].uicolor
+      # subview.backgroundColor = [rand * 255, rand * 255, rand * 255].uicolor
+      subview.backgroundColor = [85,99,0].uicolor
       scroll << subview
       header_frame = subview.bounds.down(30).right(30).width(150).height(20)
       header_label = UILabel.alloc.initWithFrame header_frame
